@@ -11,7 +11,7 @@ import (
 
 	"github.com/nxadm/tail/util"
 
-    "github.com/fsnotify/fsnotify"
+	"github.com/fsnotify/fsnotify"
 	"gopkg.in/tomb.v1"
 )
 
@@ -121,6 +121,7 @@ func (fw *InotifyFileWatcher) ChangeEvents(t *tomb.Tomb, pos int64) (*FileChange
 					util.Fatal("Failed to stat file %v: %v", fw.Filename, err)
 				}
 				fw.Size = fi.Size()
+				fmt.Println("-------got write events")
 
 				if prevSize > 0 && prevSize > fw.Size {
 					changes.NotifyTruncated()
