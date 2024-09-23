@@ -11,8 +11,8 @@ import (
 	"io/ioutil"
 	"os"
 	"strconv"
-	
-	"github.com/nxadm/tail"
+
+	"github.com/jazeltq/tail"
 )
 
 type jsonStruct struct {

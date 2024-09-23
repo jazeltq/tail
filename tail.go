@@ -1,8 +1,8 @@
-// Copyright (c) 2019 FOSS contributors of https://github.com/nxadm/tail
+// Copyright (c) 2019 FOSS contributors of https://github.com/jazeltq/tail
 // Copyright (c) 2015 HPE Software Inc. All rights reserved.
 // Copyright (c) 2013 ActiveState Software Inc. All rights reserved.
 
-// nxadm/tail provides a Go library that emulates the features of the BSD `tail`
+// jazeltq/tail provides a Go library that emulates the features of the BSD `tail`
 // program. The library comes with full support for truncation/move detection as
 // it is designed to work with log rotation tools. The library works on all
 // operating systems supported by Go, including POSIX systems like Linux and
@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nxadm/tail/ratelimiter"
-	"github.com/nxadm/tail/util"
-	"github.com/nxadm/tail/watch"
+	"github.com/jazeltq/tail/ratelimiter"
+	"github.com/jazeltq/tail/util"
+	"github.com/jazeltq/tail/watch"
 	"gopkg.in/tomb.v1"
 )
 
